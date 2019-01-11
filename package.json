@@ -8,8 +8,8 @@
     "url" : "https://github.com/AlfredBryan/rccg-database.git"
   },
   "scripts": {
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
     "start": "nodemon server.js",
+    "heroku-postbuild": "cd client && npm install && npm run build",
     "dev": "concurrently \"nodemon server.js\" \"cd client && npm start\""
   },
   "engines": {
