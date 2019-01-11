@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "A registry for workers of a firm or organisation",
   "main": "server.js",
+  "repository" : { 
+    "type" : "git",
+    "url" : "https://github.com/AlfredBryan/rccg-database.git"
+  },
   "scripts": {
     "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
     "start": "nodemon server.js",
