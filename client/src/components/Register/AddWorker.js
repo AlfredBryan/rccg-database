@@ -3,7 +3,6 @@ import "./addWorker.css";
 import { Redirect } from "react-router-dom";
 import axios from "axios";
 
-
 class AddWorker extends Component {
   constructor(props) {
     super(props);
@@ -52,87 +51,83 @@ class AddWorker extends Component {
       return <Redirect to="/" />;
     }
     return (
-      <div className="add">
-        <form type="submit">
-          <h1>Add Workers to Database</h1>
-          <label for="fname">First Name</label>
-          <input
-            type="text"
-            id="firstName"
-            name="firstName"
-            placeholder="Your name.."
-            value={this.state.firstName}
-            onChange={this.onChangeHandler}
-          />
+      <div>
+        <div className="container">
+          <div className="add">
+            <form type="submit">
+              <h1>Add Workers to Database</h1>
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="Your name.."
+                value={this.state.firstName}
+                onChange={this.onChangeHandler}
+              />
 
-          <label for="lname">Last Name</label>
-          <input
-            type="text"
-            id="lastName"
-            name="lastName"
-            placeholder="Your last name.."
-            value={this.state.lastName}
-            onChange={this.onChangeHandler}
-          />
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                placeholder="Your last name.."
+                value={this.state.lastName}
+                onChange={this.onChangeHandler}
+              />
 
-          <label for="department">Department</label>
-          <select
-            id="department"
-            name="department"
-            onChange={this.Change}
-            value={this.state.department}
-          >
-            <option value="Minister">Minister</option>
-            <option value="Choir">Choir</option>
-            <option value="Pastor">Pastor</option>
-            <option value="Usher">Usher</option>
-            <option value="prayerTeam">prayerTeam</option>
-          </select>
+              <label for="department">Department</label>
+              <select
+                id="department"
+                name="department"
+                onChange={this.Change}
+                value={this.state.department}
+              >
+                <option value="Minister">Minister</option>
+                <option value="Choir">Choir</option>
+                <option value="Pastor">Pastor</option>
+                <option value="Usher">Usher</option>
+                <option value="prayerTeam">prayerTeam</option>
+              </select>
 
-          <label for="phone">Phone</label>
-          <input
-            type="text"
-            id="phone"
-            name="phone"
-            placeholder="Enter phone..."
-            value={this.state.phone}
-            onChange={this.onChangeHandler}
-          />
+              <label for="phone">Phone</label>
+              <input
+                type="text"
+                id="phone"
+                name="phone"
+                placeholder="Enter phone..."
+                value={this.state.phone}
+                onChange={this.onChangeHandler}
+              />
 
-          <input type="submit" onClick={this.addWorker} value="Submit" />
-        </form>
-        <div className="footers">
-          <div class="footer">
-            <div class="containers">
-              <span>
-                <a href="#">
-                  <i class="fa fa-twitch fa-3x fa-fw" />
-                </a>
-                <a href="#">
-                  <i class="fa fa-facebook fa-3x fa-fw" />
-                </a>
-                <a href="#">
-                  <i class="fa fa-twitter fa-3x fa-fw" />
-                </a>
-                <a href="#">
-                  <i class="fa fa-youtube-play fa-3x fa-fw" />
-                </a>
-                <a href="#">
-                  <i class="fa fa-rss fa-3x fa-fw" />
-                </a>
-                <a href="#">
-                  <i class="fa fa-vine fa-3x fa-fw" />
-                </a>
-                <a href="#">
-                  <i class="fa fa-flickr fa-3x fa-fw" />
-                </a>
-                <a href="#">
-                  <i class="fa fa-linkedin fa-3x fa-fw" />
-                </a>
-              </span>
-            </div>
+              <input type="submit" onClick={this.addWorker} value="Submit" />
+            </form>
           </div>
         </div>
+        <footer class="footer">
+          <div class="container">
+            <ul class="social-icon animate pull-right">
+              <li>
+              <p className="copy">Copyright © All Rights Reserved 2020 | Design & Development by Bryan</p>
+              </li>
+              <li>
+                <a href="#" title="facebook" target="_blank">
+                  <i class="fa fa-facebook" />
+                </a>
+              </li>
+              <li>
+                <a href="#" title="twitter" target="_blank">
+                  <i class="fa fa-twitter" />
+                </a>
+              </li>
+              <li>
+                <a href="#" title="google plus" target="_blank">
+                  <i class="fa fa-google-plus" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
       </div>
     );
   }

@@ -89,38 +89,30 @@ class Login extends Component {
             </div>
           </div>
         </div>
-        <div className="footers">
-          <div className="footer">
-            <div className="containers">
-              <span>
-                <a href="#">
-                  <i className="fa fa-twitch fa-3x fa-fw" />
+        <footer class="footer">
+          <div class="container">
+            <ul class="social-icon animate pull-right">
+              <li>
+              <p className="copy">Copyright © All Rights Reserved 2020 | Design & Development by Bryan</p>
+              </li>
+              <li>
+                <a href="#" title="facebook" target="_blank">
+                  <i class="fa fa-facebook" />
                 </a>
-                <a href="#">
-                  <i className="fa fa-facebook fa-3x fa-fw" />
+              </li>
+              <li>
+                <a href="#" title="twitter" target="_blank">
+                  <i class="fa fa-twitter" />
                 </a>
-                <a href="#">
-                  <i className="fa fa-twitter fa-3x fa-fw" />
+              </li>
+              <li>
+                <a href="#" title="google plus" target="_blank">
+                  <i class="fa fa-google-plus" />
                 </a>
-                <a href="#">
-                  <i className="fa fa-youtube-play fa-3x fa-fw" />
-                </a>
-                <a href="#">
-                  <i className="fa fa-rss fa-3x fa-fw" />
-                </a>
-                <a href="#">
-                  <i className="fa fa-vine fa-3x fa-fw" />
-                </a>
-                <a href="#">
-                  <i className="fa fa-flickr fa-3x fa-fw" />
-                </a>
-                <a href="#">
-                  <i className="fa fa-linkedin fa-3x fa-fw" />
-                </a>
-              </span>
-            </div>
+              </li>
+            </ul>
           </div>
-        </div>
+        </footer>
       </div>
     );
   }

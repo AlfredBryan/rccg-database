@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import axios from "axios";
 import moment from "moment/moment.js";
 
-
 class Workers extends Component {
   constructor(props) {
     super(props);
@@ -44,38 +43,33 @@ class Workers extends Component {
             </div>
           </div>
         ))}
-        <div className="footers">
-          <div class="footer">
-            <div class="containers">
-              <span>
-                <a href="#">
-                  <i class="fa fa-twitch fa-3x fa-fw" />
+        <footer class="footer">
+          <div class="container">
+            <ul class="social-icon animate pull-right">
+              <li>
+                <p className="copy">
+                  Copyright © All Rights Reserved 2020 | Design & Development by
+                  Bryan
+                </p>
+              </li>
+              <li>
+                <a href="https://web.facebook.com/ibukys.ogar" title="facebook" target="_blank">
+                  <i class="fa fa-facebook" />
                 </a>
-                <a href="#">
-                  <i class="fa fa-facebook fa-3x fa-fw" />
+              </li>
+              <li>
+                <a href="#" title="twitter" target="_blank">
+                  <i class="fa fa-twitter" />
                 </a>
-                <a href="#">
-                  <i class="fa fa-twitter fa-3x fa-fw" />
+              </li>
+              <li>
+                <a href="#" title="google plus" target="_blank">
+                  <i class="fa fa-google-plus" />
                 </a>
-                <a href="#">
-                  <i class="fa fa-youtube-play fa-3x fa-fw" />
-                </a>
-                <a href="#">
-                  <i class="fa fa-rss fa-3x fa-fw" />
-                </a>
-                <a href="#">
-                  <i class="fa fa-vine fa-3x fa-fw" />
-                </a>
-                <a href="#">
-                  <i class="fa fa-flickr fa-3x fa-fw" />
-                </a>
-                <a href="#">
-                  <i class="fa fa-linkedin fa-3x fa-fw" />
-                </a>
-              </span>
-            </div>
+              </li>
+            </ul>
           </div>
-        </div>
+        </footer>
       </div>
     );
   }

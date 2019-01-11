@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Crimson+Text");
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 * {
   box-sizing: border-box;
 }
@@ -39,6 +41,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: 'Abril Fatface', cursive;
 }
 
 .topnav button {
@@ -153,63 +156,48 @@ body {
 }
 
 /* Footer */
-.footers {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 150px;
-  background-color: #111;
+.social-icon {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icon li {
+  display: inline-block;
   text-align: center;
 }
 
-.containers {
-  margin-top: 50px;
-  color: #fff;
+.social-icon a {
+  display: block;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.social-icon a {
+  background: rgba(255, 255, 255, 0.85); /* social icon background color */
+  color: #000; /* social icon color */
+}
+
+.social-icon a:hover {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.25
+  ); /* social icon hover background color */
+  color: #fff; /* social icon hover color */
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding-top: 5px;
   width: 100%;
-}
-
-.fa-twitter {
-  color: #4099ff;
-}
-
-.fa-facebook {
-  color: #3b5998;
-}
-
-.fa-youtube-play {
-  color: #e52d27;
-}
-
-.fa-rss {
-  color: #ff6600;
-}
-
-.fa-vine {
-  color: #00a478;
-}
-
-.fa-flickr {
-  color: #ff0084;
-}
-
-.fa-twitch {
-  color: #6441a5;
-}
-
-.fa-linkedin {
-  color: #007bb6;
-}
-
-.fa {
-  opacity: 0.7;
-  transition: 1s;
-  -webkit-transition: 1s;
-}
-
-.fa:hover {
-  opacity: 1;
-  transition: 1s;
-  -webkit-transition: 1s;
+  height: 100px;
+  background-color: #000;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -219,6 +207,12 @@ body {
     width: 100%;
     padding: 0;
   }
+}
+
+.copy {
+  margin-right: 300px;
+  color: white;
+  font-family: 'Playfair Display', serif;
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
@@ -234,5 +228,8 @@ body {
   .topnav form {
     float: none;
     width: 100%;
+  }
+  .copy {
+    margin-right: 0;
   }
 }

@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Major+Mono+Display");
+@import url("https://fonts.googleapis.com/css?family=Cardo");
+@import url("https://fonts.googleapis.com/css?family=Satisfy");
+.bannerA {
+  background-image: url("../images/church.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  padding: 10px;
+  position: relative;
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 53%;
+  color: #fff;
+  transform: translate(-50%, -50%);
+}
+.centered h1 {
+  font-weight: bold;
+  font-size: 80px;
+  font-family: "Major Mono Display", monospace;
+}
+.about-links {
+  background-color: black;
+  height: 30px;
+  font-family: "Abril Fatface", cursive;
+  color: white;
+}
+.about-links a {
+  text-decoration: none;
+  color: #fff;
+}
+.about-links a:hover {
+  text-decoration: none;
+  color: black;
+  background-color: #fff;
+}
+.history {
+  float: left;
+  margin-left: 400px;
+  display: block;
+}
+.beliefs {
+  float: left;
+  margin-left: 30px;
+  display: block;
+}
+.mission {
+  float: left;
+  margin-left: 30px;
+  display: block;
+}
+.leaders {
+  float: left;
+  margin-left: 30px;
+  display: block;
+}
+
+@media screen and (max-width: 400px) {
+  .history {
+    float: none;
+    margin-left: 0;
+    margin-left: 150px;
+  }
+  .beliefs {
+    float: none;
+    margin-left: 150px;
+  }
+  .mission {
+    float: none;
+    margin-left: 0;
+    margin-left: 150px;
+  }
+  .leaders {
+    float: none;
+    margin-left: 0;
+    margin-left: 150px;
+  }
+  .about-links {
+    height: 85px;
+  }
+  .about-main1 {
+    margin-top: 0px;
+    flex: none;
+  }
+  .about-main {
+    margin-top: 0px;
+    flex: none;
+  }
+  .about1 {
+    width: 100%;
+  }
+  .about2 {
+    width: 100%;
+  }
+  .about3 {
+    width: 100%;
+  }
+  .about4 {
+    width: 100%;
+  }
+}
+
+#about-main {
+  margin-top: 50px;
+}
+
+#about-main h1 {
+  color: rgb(20, 121, 236);
+  font-weight: bold;
+  font-family: "Cardo", serif;
+}
+#about-main1 h1 {
+  color: rgb(20, 121, 236);
+  font-weight: bold;
+  font-family: "Cardo", serif;
+}
+
+#about-main1 {
+  margin-top: 40px;
+}
+.section {
+  margin-top: 100px;
+  text-align: center;
+}
+.section p {
+  margin-top: 50px;
+  font-size: 20px;
+  font-family: "Satisfy", cursive;
+}
+
+.history-page h1 {
+  color: rgb(20, 121, 236);
+  font-weight: bold;
+  font-family: "Cardo", serif;
+  text-align: center;
+}
+
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 100%;
+  background-color: #96967f;
+  height: 1px;
+}
+
+.contact1 {
+  text-transform: lowercase;
+  font-family: "Crimson Text", serif;
+}
+.letter1 p::first-letter {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 30px;
+  color: rgb(20, 121, 236);
+}

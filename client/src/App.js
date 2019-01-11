@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import AddWorker from "./components/Register/AddWorker";
 import Workers from "./components/Workers/Workers";
 import Login from "./components/Login/Login";
+import About from "./components/About/About";
+import History from "./components/About/History";
 
 class App extends Component {
   render() {
@@ -16,6 +18,8 @@ class App extends Component {
             <Route exact path="/create" component={AddWorker} />
             <Route exact path="/workers" component={Workers} />
             <Route exact path="/login" component={Login} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/history" component={History} />
           </div>
         </Router>
       </div>

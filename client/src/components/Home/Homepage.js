@@ -6,7 +6,6 @@ import "./homepage.css";
 
 import { Link } from "react-router-dom";
 
-
 class Homepage extends Component {
   constructor(props) {
     super(props);
@@ -48,12 +47,10 @@ class Homepage extends Component {
 
           <div className="topnav">
             <a href="/">Home</a>
-            <Link to="/workers">View  All</Link>
+            <Link to="/workers">View All</Link>
             <Link to="/login">Admin</Link>
-            <form
-              style={{ float: "right" }}
-              onSubmit={this.getInfo}
-            >
+            <Link to="/about">About</Link>
+            <form style={{ float: "right" }} onSubmit={this.getInfo}>
               <input
                 type="text"
                 placeholder="Search Workers"
@@ -69,10 +66,13 @@ class Homepage extends Component {
           <div className="row">
             <div className="leftcolumn">
               <div className="card">
-                <h2>TITLE HEADING</h2>
-                <h5>Title description, Dec 7, 2017</h5>
-                <img src={require("../images/bpics.jpg")} className="fakeimg" style={{ height: "400px" }} alt="background"/>                
-                <p>Some text..</p>
+                <h2>The Hope Center Parish</h2>
+                <img
+                  src={require("../images/bpics.jpg")}
+                  className="fakeimg"
+                  style={{ height: "400px" }}
+                  alt="background"
+                />
               </div>
             </div>
             <div className="rightcolumn">
@@ -83,51 +83,70 @@ class Homepage extends Component {
                 </div>
               </div>
               <div className="card">
-                <h3>Popular Post</h3>
-                <div className="fakeimg">
-                  <p>Image</p>
-                </div>
-                <div className="fakeimg">
-                  <p>Image</p>
-                </div>
-                <div className="fakeimg">
-                  <p>Image</p>
-                </div>
+                <h1>Contact Us</h1>
+                <form onSubmit={this.handleSubmit}>
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your name.."
+                    onChange={this.handleChange}
+                    value={this.state.name}
+                  />
+
+                  <label for="lname">Email</label>
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Enter last email.."
+                    onChange={this.handleChange}
+                    value={this.state.email}
+                  />
+
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    value={this.state.message}
+                    placeholder="Enter message.."
+                    style={{ height: "200px" }}
+                    onChange={this.handleChange}
+                  />
+
+                  <input type="submit" value="Submit" />
+                </form>
               </div>
             </div>
           </div>
-          <div className="footers">
-            <div class="footer">
-              <div class="containers">
-                <span>
-                  <a href="#">
-                    <i class="fa fa-twitch fa-3x fa-fw" />
+          <footer class="footer">
+            <div class="container">
+              <ul class="social-icon animate pull-right">
+                <li>
+                  <p className="copy">
+                    Copyright © All Rights Reserved 2020 | Design & Development
+                    by Bryan
+                  </p>
+                </li>
+                <li>
+                  <a href="#" title="facebook" target="_blank">
+                    <i class="fa fa-facebook" />
                   </a>
-                  <a href="#">
-                    <i class="fa fa-facebook fa-3x fa-fw" />
+                </li>
+                <li>
+                  <a href="#" title="twitter" target="_blank">
+                    <i class="fa fa-twitter" />
                   </a>
-                  <a href="#">
-                    <i class="fa fa-twitter fa-3x fa-fw" />
+                </li>
+                <li>
+                  <a href="#" title="google plus" target="_blank">
+                    <i class="fa fa-google-plus" />
                   </a>
-                  <a href="#">
-                    <i class="fa fa-youtube-play fa-3x fa-fw" />
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-rss fa-3x fa-fw" />
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-vine fa-3x fa-fw" />
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-flickr fa-3x fa-fw" />
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-linkedin fa-3x fa-fw" />
-                  </a>
-                </span>
-              </div>
+                </li>
+              </ul>
             </div>
-          </div>
+          </footer>
         </div>
       );
     } else {
@@ -170,38 +189,33 @@ class Homepage extends Component {
               </div>
             </div>
           ))}
-          <div className="footers">
-            <div class="footer">
-              <div class="containers">
-                <span>
-                  <a href="#">
-                    <i class="fa fa-twitch fa-3x fa-fw" />
+          <footer class="footer">
+            <div class="container">
+              <ul class="social-icon animate pull-right">
+                <li>
+                  <p className="copy">
+                    Copyright © All Rights Reserved 2020 | Design & Development
+                    by Bryan
+                  </p>
+                </li>
+                <li>
+                  <a href="#" title="facebook" target="_blank">
+                    <i class="fa fa-facebook" />
                   </a>
-                  <a href="#">
-                    <i class="fa fa-facebook fa-3x fa-fw" />
+                </li>
+                <li>
+                  <a href="#" title="twitter" target="_blank">
+                    <i class="fa fa-twitter" />
                   </a>
-                  <a href="#">
-                    <i class="fa fa-twitter fa-3x fa-fw" />
+                </li>
+                <li>
+                  <a href="#" title="google plus" target="_blank">
+                    <i class="fa fa-google-plus" />
                   </a>
-                  <a href="#">
-                    <i class="fa fa-youtube-play fa-3x fa-fw" />
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-rss fa-3x fa-fw" />
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-vine fa-3x fa-fw" />
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-flickr fa-3x fa-fw" />
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-linkedin fa-3x fa-fw" />
-                  </a>
-                </span>
-              </div>
+                </li>
+              </ul>
             </div>
-          </div>
+          </footer>
         </div>
       );
     }
