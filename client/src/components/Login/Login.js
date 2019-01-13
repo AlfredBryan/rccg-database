@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { Redirect } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import "./Login.css";
 
 class Login extends Component {
@@ -50,6 +51,9 @@ class Login extends Component {
     }
     return (
       <div>
+        <Helmet>
+          <title>Admin</title>
+        </Helmet>
         <div className="topnav">
           <a href="/">Home</a>
         </div>
@@ -93,10 +97,18 @@ class Login extends Component {
           <div class="container">
             <ul class="social-icon animate pull-right">
               <li>
-              <p className="copy">Copyright © All Rights Reserved 2020 | Design & Development by Bryan</p>
+                <p className="copy">
+                  Copyright © All Rights Reserved 2020 | Design & Development by
+                  Bryan
+                </p>
               </li>
               <li>
-                <a href="#" title="facebook" target="_blank">
+                <a
+                  href="https://web.facebook.com/ibukys.ogar"
+                  title="facebook"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
                   <i class="fa fa-facebook" />
                 </a>
               </li>

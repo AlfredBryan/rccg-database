@@ -1,19 +1,19 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import "./About.css";
 
-class About extends Component {
+class Mission extends Component {
   render() {
     return (
       <div>
           <Helmet>
-              <title>About</title>
+              <title>Mission and Vision</title>
           </Helmet>
         <div className="topnav">
           <a href="/">Home</a>
           <Link to="/workers">View All</Link>
           <Link to="/login">Admin</Link>
+          <Link to="/about">About</Link>
         </div>
         <div className="bannerA">
           <div className="centered">
@@ -34,43 +34,23 @@ class About extends Component {
             Our Leaders
           </Link>
         </div>
-        <div id="about-main" className="container">
-          <div className="row">
-            <div className="col-sm-6">
-              <h1>Our History</h1>
-              <p>
-                In July 1909, a son was born into the Akindayomi family of Ondo
-                State of Nigeria. Even though this child grew up surrounded by
-                idol worshippers,
-              </p>
-              <Link to="/history">Read more...</Link>
-            </div>
-            <div className="col-sm-6">
-              <h1>Our Beliefs</h1>
-              <p>
-                We believe that the entire Scripture, both Old and New Testament
-                are written by the inspiration of the Holy Spirit – II Tim.
-                3:16-17
-              </p>
-              <Link to="/beliefs">Read more...</Link>
-            </div>
-          </div>
-        </div>
-        <div id="about-main1" className="container">
-          <div className="row">
-            <div className="col-sm-6">
-              <h1>Mission and Vision</h1>
-              <p>To make heaven. To take as many people with us.</p>
-              <Link to="/mission">Read more...</Link>
-            </div>
-            <div className="col-sm-6">
-              <h1>Our Leaders</h1>
-              <p>
-                Pastor E.A Adeboye, General Overseer RCCG Worldwide and Chairman
-                of Governing Council.
-              </p>
-              <Link to="/leaders">Read more...</Link>
-            </div>
+        <div className="container">
+          <div className="mission1">
+            <h1>MISSION AND VISION</h1>
+            <p>To make heaven.</p>
+            <p>To take as many people with us.</p>
+            <p>To have a member of RCCG in every family of all nations.</p>
+            <p>To accomplish No. 1 above, holiness will be our lifestyle.</p>
+            <p>
+              To accomplish No. 2 and 3 above, we will plant churches within
+              five minutes walking distance in every city and town of developing
+              countries and within five minutes driving distance in every city
+              and town of developed countries.
+            </p>
+            <p>
+              We will pursue these objectives until every Nation in the world is
+              reached for the Lord Jesus Christ
+            </p>
           </div>
         </div>
         <div className="section">
@@ -120,5 +100,4 @@ class About extends Component {
     );
   }
 }
-
-export default About;
+export default Mission;

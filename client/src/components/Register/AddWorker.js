@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./addWorker.css";
 import { Redirect } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import axios from "axios";
 
 class AddWorker extends Component {
@@ -52,6 +53,9 @@ class AddWorker extends Component {
     }
     return (
       <div>
+        <Helmet>
+          <title>Add</title>
+        </Helmet>
         <div className="container">
           <div className="add">
             <form type="submit">
@@ -108,10 +112,18 @@ class AddWorker extends Component {
           <div class="container">
             <ul class="social-icon animate pull-right">
               <li>
-              <p className="copy">Copyright © All Rights Reserved 2020 | Design & Development by Bryan</p>
+                <p className="copy">
+                  Copyright © All Rights Reserved 2020 | Design & Development by
+                  Bryan
+                </p>
               </li>
               <li>
-                <a href="#" title="facebook" target="_blank">
+                <a
+                  href="https://web.facebook.com/ibukys.ogar"
+                  title="facebook"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
                   <i class="fa fa-facebook" />
                 </a>
               </li>

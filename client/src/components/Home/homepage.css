@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Crimson+Text");
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
+@import url("https://fonts.googleapis.com/css?family=Teko");
+@import url("https://fonts.googleapis.com/css?family=Old+Standard+TT");
 * {
   box-sizing: border-box;
 }
@@ -41,7 +43,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: 'Abril Fatface', cursive;
+  font-family: "Abril Fatface", cursive;
 }
 
 .topnav button {
@@ -63,40 +65,11 @@ body {
   color: black;
 }
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {
-  float: left;
-  width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  background-color: #f1f1f1;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
 /* Add a card effect for articles */
-.card {
+.card1 {
   background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+  padding: 15px;
+  margin-top: 5px;
 }
 
 /*search bar*/
@@ -110,7 +83,7 @@ body {
   background-color: white;
   background-position: 10px 10px;
   background-repeat: no-repeat;
-  padding: 12px 20px 12px 20px;
+  padding: 5px 10px 5px 10px;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
 }
@@ -120,13 +93,14 @@ body {
 }
 .contact {
   background-color: white;
-  padding: 20px;
-  margin-top: 20px;
+  padding: 10px;
+  margin-top: 5px;
   display: flex;
 }
 .contact1 {
   text-transform: lowercase;
   font-family: "Crimson Text", serif;
+  color: #3a6186;
 }
 .contact1::first-letter {
   text-transform: uppercase;
@@ -136,6 +110,7 @@ body {
   margin-left: 7px;
   text-transform: lowercase;
   font-family: "Crimson Text", serif;
+  color: #3a6186;
 }
 .contact2::first-letter {
   text-transform: uppercase;
@@ -145,6 +120,8 @@ body {
   margin-left: 7px;
   text-transform: lowercase;
   font-family: "Crimson Text", serif;
+  color: #b29999;
+  font-weight: bold;
 }
 .contact4 {
   margin-left: 7px;
@@ -212,7 +189,7 @@ body {
 .copy {
   margin-right: 300px;
   color: white;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
@@ -232,4 +209,61 @@ body {
   .copy {
     margin-right: 0;
   }
+}
+.home-main {
+  background-image: url("../images/homepage.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  padding: 10px;
+  position: relative;
+}
+.center {
+  position: absolute;
+  top: 45%;
+  left: 53%;
+  color: #fff;
+  transform: translate(-50%, -50%);
+}
+.center h1 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 40px;
+}
+
+#contact h1,
+h2,
+h3 {
+  margin: 0 0 35px 0;
+  font-family: "Teko", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.form-group {
+  font-family: "Teko", sans-serif;
+  font-size: 20px
+}
+#contact h2 {
+  margin-top: 20px;
+}
+
+#contact p {
+  margin: 0 0 25px;
+  font-size: 18px;
+  line-height: 1.6em;
+}
+#contact input,
+textarea {
+  font-family: "Old Standard TT", serif;
+}
+
+#contact {
+  background: #333333;
+  color: #f4f4f4;
+  padding-bottom: 80px;
+  margin-top: 40px;
+}
+
+textarea.form-control {
+  height: 100px;
 }

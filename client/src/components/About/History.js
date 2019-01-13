@@ -1,11 +1,15 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import "./About.css";
 
 class History extends Component {
   render() {
     return (
       <div>
+     <Helmet>
+         <title>Our History</title>
+     </Helmet>
         <div className="topnav">
           <a href="/">Home</a>
           <Link to="/workers">View All</Link>
@@ -21,13 +25,13 @@ class History extends Component {
           <Link to="/history" className="history">
             Our History
           </Link>
-          <Link to="" className="beliefs">
+          <Link to="/beliefs" className="beliefs">
             Our Beliefs
           </Link>
-          <Link to="" className="mission">
+          <Link to="/mission" className="mission">
             Mission and Vision
           </Link>
-          <Link to="" className="leaders">
+          <Link to="/leaders" className="leaders">
             Our Leaders
           </Link>
         </div>
@@ -178,7 +182,12 @@ class History extends Component {
                 </p>
               </li>
               <li>
-                <a href="#" title="facebook" target="_blank">
+                <a
+                  href="https://web.facebook.com/ibukys.ogar"
+                  title="facebook"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
                   <i class="fa fa-facebook" />
                 </a>
               </li>

@@ -7,6 +7,9 @@ import Workers from "./components/Workers/Workers";
 import Login from "./components/Login/Login";
 import About from "./components/About/About";
 import History from "./components/About/History";
+import Beliefs from "./components/About/Beliefs";
+import Mission from "./components/About/Mission";
+import Leaders from "./components/About/Leaders";
 
 class App extends Component {
   render() {
@@ -20,6 +23,9 @@ class App extends Component {
             <Route exact path="/login" component={Login} />
             <Route exact path="/about" component={About} />
             <Route exact path="/history" component={History} />
+            <Route exact path="/beliefs" component={Beliefs} />
+            <Route exact path="/mission" component={Mission} />
+            <Route exact path="/leaders" component={Leaders} />
           </div>
         </Router>
       </div>
