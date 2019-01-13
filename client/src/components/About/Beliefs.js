@@ -24,7 +24,7 @@ class Beliefs extends Component {
           <Link to="/history" className="history">
             Our History
           </Link>
-          <Link to="" className="beliefs">
+          <Link to="/beliefs" className="beliefs">
             Our Beliefs
           </Link>
           <Link to="/mission" className="mission">
@@ -37,7 +37,7 @@ class Beliefs extends Component {
         <div className="history-page">
           <div className="container">
             <div className="begin">
-              <h1>OUR HISTORY</h1>
+              <h1>OUR BELIEFS</h1>
               <div className="header-1">
                 <h2>THE BIBLE TEACHING</h2>
                 <p>
